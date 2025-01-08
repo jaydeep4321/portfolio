@@ -8,8 +8,7 @@
   box-sizing: border-box;
 }
 
- /* mouse scroller effect  */
-
+/* mouse scroller effect  */
 
 .scroll-downs {
   position: absolute;
@@ -18,8 +17,8 @@
   bottom: 0;
   left: 0;
   margin: auto;
-  
-  width :34px;
+
+  width: 34px;
   height: 55px;
 }
 .mousey {
@@ -38,20 +37,35 @@
   background-color: #fff;
   animation-name: scroll;
   animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 
- /* mouse scroller effect end */
+/* Hide .mousey on screens smaller than 768px */
+@media (max-width: 768px) {
+  .mousey {
+    display: none;
+  }
+}
+
+/* mouse scroller effect end */
 
 /* Clear fix hack */
 .clearfix:after {
-  content: ".";
+  content: '.';
   display: block;
   clear: both;
   visibility: hidden;
@@ -78,7 +92,7 @@ body {
 body {
   background-color: rgb(34, 40, 49);
 
-  font-family: "Satoshi 400";
+  font-family: 'Satoshi 400';
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
@@ -96,18 +110,18 @@ h1,
 .declaration {
   margin: 0;
 
-  font-family: "GeneralSans 700";
+  font-family: 'GeneralSans 700';
   font-size: 3.5rem;
 }
 
 h2 {
   margin: 0;
   font-size: 2.8rem;
-  font-family: "Satoshi 700";
+  font-family: 'Satoshi 700';
 }
 
 h3 {
-  font-family: "Satoshi 900";
+  font-family: 'Satoshi 900';
   font-size: 2rem;
 }
 
@@ -233,7 +247,7 @@ nav img {
 
 .menu-bar::before {
   position: absolute;
-  content: "";
+  content: '';
   top: -1.1rem;
   right: 0;
   width: 70%;
@@ -242,7 +256,7 @@ nav img {
 
 .menu-bar::after {
   position: absolute;
-  content: "";
+  content: '';
   bottom: -1.1rem;
   right: 0;
   width: 70%;
@@ -342,7 +356,7 @@ main {
 
 .cta,
 .cta1 {
-  font-family: "Satoshi 700";
+  font-family: 'Satoshi 700';
 }
 
 .cta {
@@ -389,7 +403,7 @@ main {
 .cta2::after,
 .nav-link:nth-child(4)::after {
   position: absolute;
-  content: "";
+  content: '';
   top: -1.8px;
   bottom: -1.8px;
   left: -1.8px;
@@ -419,7 +433,7 @@ main {
 }
 
 .separator::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -1rem;
   left: 0;
@@ -435,7 +449,7 @@ main {
 }
 
 .about-text span {
-  font-family: "Satoshi 700";
+  font-family: 'Satoshi 700';
   color: rgb(29, 228, 255);
 }
 
@@ -468,7 +482,7 @@ main {
 }
 
 .img-box::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -518,7 +532,7 @@ h3 {
 }
 
 .project-main-info p > a {
-  font-family: "Satoshi 700";
+  font-family: 'Satoshi 700';
   color: rgb(29, 228, 255);
 }
 
@@ -544,7 +558,7 @@ h3 {
 
   padding-bottom: 0.3rem;
 
-  font-family: "Satoshi 700";
+  font-family: 'Satoshi 700';
 }
 
 .project-image-box {
@@ -603,7 +617,7 @@ h3 {
 }
 
 .side-project span {
-  font-family: "Satoshi 500";
+  font-family: 'Satoshi 500';
 }
 
 /* CONTACT SECTION STYLING */
@@ -622,7 +636,7 @@ h3 {
 }
 
 #contact span {
-  font-family: "Satoshi 500";
+  font-family: 'Satoshi 500';
   font-size: 1.6rem;
   color: rgba(126, 146, 217, 1);
 }
@@ -630,7 +644,7 @@ h3 {
 h4 {
   margin: 1rem;
 
-  font-family: "Satoshi 900";
+  font-family: 'Satoshi 900';
   font-size: 3rem;
 }
 
@@ -843,7 +857,7 @@ footer span {
 
   .project-main-info::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     bottom: 0;
